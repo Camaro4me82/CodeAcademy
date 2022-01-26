@@ -1,0 +1,263 @@
+/*Universal code*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: rgb(226, 225, 147);
+}
+
+div {
+    display: flexbox;
+    justify-content: space-between;
+    /*border: 2px solid red;*/
+    height: 100%;
+    width: 100%;
+    padding: 10px; 
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Calibri;
+    text-align: center;
+}
+
+h2, h3 {
+    font-size: 2em;
+    font-family: Impact;
+    text-align: center;
+    color: rgb(92, 90, 196);
+    margin: 30px auto;
+}
+
+/*This is for Navigation Section*/
+
+.navigate {
+    display: flex;
+    flex-direction: column;
+    background: url("images/dark-cloud.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+
+}
+
+.nav {
+    display: flex;
+    margin: 5px auto;
+    height: 125px;
+}
+
+.navigate h1 {
+    font-size: 3rem;
+    color: rgb(255, 213, 0);
+    text-align: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 50px;
+    padding: 2px;
+    margin: auto; 
+    color: rgb(251, 255, 9);
+    z-index: 2;
+}
+
+.nav li {
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid rgb(251, 255, 9);
+    margin: 5px 15px;
+    padding: 5px;
+    z-index: inherit;
+}
+.nav a {
+    text-decoration: none;
+    color:rgb(251, 255, 9);
+}
+/*This is for Hero-Banner Section*/
+
+
+/*This is for Sec-A Section*/
+
+.li {
+    margin-left: 30px;
+    list-style: lower-roman inside;
+}
+
+/*The recommended order is link,visited,focus,hover,active.*/
+.li a {
+    text-decoration: none;
+}
+
+.li a:link {
+    color: rgb(0, 0, 255);
+}
+
+.li a:visited {
+    color: rgb(128, 0, 128);
+}
+
+.li a:hover {
+    color: rgb(0, 128, 0);
+}
+
+.li a:active {
+    color: rgb(255, 0, 0);
+}
+
+/*This is for Sec-B Section*/
+
+.sec-b {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sec-b-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*.link-col {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px auto;
+}*/
+
+.links {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    /*border: 2px solid rgb(255, 215, 0);*/
+    height: 300px;
+    width: 350px;
+    margin: 15px 15px;
+    padding: 3px;
+}
+/*This is for Sec-C Section*/
+
+/*This is for Sec-D Section*/
+
+/*Button 1*/
+.button1 {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+  }
+
+  /*Button 2*/
+  .link_button {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #4479BA;
+    color: #FFF;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+/*Button 3*/
+.link-button {
+    margin-top:15px;
+    max-width:90px;
+    background-color:#eee;
+    border-color:#888888;
+    color:#333;
+    display:inline-block;
+    vertical-align:middle;
+    text-align:center;
+    text-decoration:none;
+    align-items:flex-start;
+    cursor:default;
+    -webkit-appearence: push-button;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    border-color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    min-height: 30px;
+}
+
+.link-button a {
+    margin-top:4px;
+    display:inline-block;
+    text-decoration:none;
+    color:#333;
+}
+
+.link-button:hover {
+    background-color:#888;
+}
+
+.link-button:active {
+    background-color:#333;
+}
+
+.link-button:hover a, .link-button:active a {
+    color:#fff;
+}
+
+/*Button 4*/
+
+.button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #da7c0c;
+    background: #478dad;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+/*This is for Sec-E Section*/
+
+/*This is for Footer Section*/
