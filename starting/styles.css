@@ -19,6 +19,9 @@ div {
     width: 100%;
     padding: 10px; 
 }
+/* Settings for screen size of 600px or more*/
+
+@media (min-width: 600px), screen and (orientation: portrait) {
 
 h1 {
     font-size: 2em;
@@ -44,18 +47,19 @@ h2, h3 {
     background-position: center;
     background-size: cover;
     z-index: 0;
+    
 
 }
 
 .nav {
     display: flex;
     margin: 5px auto;
-    height: 125px;
+    
 }
 
 .navigate h1 {
     font-size: 3rem;
-    color: rgb(255, 213, 0);
+    color: rgb(218, 124, 12);
     text-align: center;
 }
 
@@ -75,14 +79,17 @@ h2, h3 {
 .nav li {
     display: inline-flex;
     justify-content: center;
-    border: 2px solid rgb(251, 255, 9);
+    border: 2px solid rgb(218, 124, 12);
+    border-radius: 5px;
+    background-color: rgb(218, 124, 12);
+    color:rgb(238, 238, 238);
     margin: 5px 15px;
     padding: 5px;
     z-index: inherit;
 }
 .nav a {
     text-decoration: none;
-    color:rgb(251, 255, 9);
+    color:rgb(255, 255, 255);
 }
 /*This is for Hero-Banner Section*/
 
@@ -152,6 +159,12 @@ h2, h3 {
 /*This is for Sec-C Section*/
 
 /*This is for Sec-D Section*/
+
+.year1 h1, .month1 h1{
+    font-size: 3rem;
+    color: rgb(255, 213, 0);
+    text-align: center;
+}
 
 /*Button 1*/
 .button1 {
@@ -233,11 +246,12 @@ h2, h3 {
     display: inline-block;
     outline: none;
     cursor: pointer;
-    border: solid 1px #da7c0c;
-    background: #478dad;
+    border: solid 1px rgb(218, 124, 12);
+    background: rgb(71, 141, 173);
+    color: rgb(218, 124, 12);
     text-align: center;
     text-decoration: none;
-    font: 14px/100% Arial, Helvetica, sans-serif;
+    font: 20px/100% Arial, Helvetica, sans-serif;
     padding: .5em 2em .55em;
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
     -webkit-border-radius: .5em; 
@@ -252,6 +266,7 @@ h2, h3 {
     background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
     background: -moz-linear-gradient(top,  #f88e11,  #f06015);
     filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+    color: rgb(71, 141, 173);
 }
 .button:active {
     position: relative;
@@ -259,5 +274,87 @@ h2, h3 {
 }
 
 /*This is for Sec-E Section*/
+.sec-e {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact {
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+}
 
 /*This is for Footer Section*/
+
+
+}
+/*Screeen setting for 600px or less!*/
+@media (max-width: 600px), screen and (orientation: portrait) {
+
+    .navigate {
+        display: block;
+        flex-direction: column;
+        background: url("images/dark-cloud.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+  
+    
+    .navigate h1 {
+       
+        font-size: 3rem;
+        color: rgb(218, 124, 12);
+        text-align: center;
+    }
+    
+    .nav ul {
+        display: block;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        padding: 2px;
+        margin: 20px auto; 
+        color: rgb(251, 255, 9);
+    }
+    
+    .nav li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: n0-wrap;
+        justify-content: center;
+        border: 2px solid rgb(218, 124, 12);
+        border-radius: 5px;
+        background-color: rgb(218, 124, 12);
+        color:rgb(238, 238, 238);
+        margin: 5px 40px;
+        padding: 5px;
+        z-index: inherit;
+    }
+    .nav a {
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+    }
+}
+
+/*This is for Sec-E Section*/
+.sec-e {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin: 20px;
+}
