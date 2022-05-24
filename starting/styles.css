@@ -14,7 +14,7 @@ body {
 div {
     display: flexbox;
     justify-content: space-between;
-    border: 2px solid red;
+   /* border: 2px solid red;*/
     height: 100%;
     width: 100%;
     padding: 10px; 

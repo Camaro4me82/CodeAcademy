@@ -1,0 +1,163 @@
+/*Universal Settings*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color:rgb(121, 19, 19);
+}
+
+div {
+    /* border: 2px solid red;  for mock-up */
+    padding: 10px 0;
+    background-color:rgb(228, 191, 69);
+}
+
+/*This is for Navigation*/
+.navigate {
+    /* border: 2px solid orange; for mock-up */
+    display: flex;
+    flex-direction: column;
+    
+}
+.navigate h1 {
+    /* border: 2px solid orange; for mock-u[ */
+    font-family: 'Trebuchet MS';
+    font-size: 3.5em;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+}
+.nav {
+    /* border: 2px solid orange; for mock-up */
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+.nav p {
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    margin: 5px 15px;
+}
+.nav a {
+    color: rgb(73, 73, 72);
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 125px;
+}
+
+/*This is for Hero Banner*/
+
+.main img {
+    /* border: 2px solid red; for mock-up */
+    width: 100%;
+    height: 200px;
+    margin: 5px auto;
+    padding-top: 20px;
+    display: flex;
+}
+.main h2, h3, h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+}
+.main p {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    max-width: 900px;
+    text-align: center;
+}
+
+/*This is for Section A*/
+.sec-a {
+    display: block;
+}
+.sec-a h3 {
+    font-size: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+.granddad h2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 40px;
+}
+
+.granddad p {
+    /* border: 2px solid red; for mock-up */
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    text-align: justify;
+}
+.parent {
+    /* border: 2px solid black; for mock-up */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+
+.child {
+    /* border: 2px solid red; for mock-up */
+    display: inline-flex;
+    flex-wrap: nowrap; 
+    align-content: stretch;
+    width: 400px;
+    height: 200px;
+    margin-left: 80px;
+    margin-right: 80px;  
+}
+
+.child img {
+    width: 200px;
+    height: 180px; 
+
+}
+
+.child p {
+    margin-left: 20px;
+    align-self: center;
+    font-family: 'Lucida Grande';
+    font-size: 2em;
+    font-weight: 800;
+    color:rgb(121, 19, 19);
+}
+
+/*This is for Section B*/
+
+.sec-b {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+.sec-b p {
+    text-align: center;
+}
+
+.dad {
+    height: 450px;
+    width: 300px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*This is for Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer p {
+   text-align: center;
+
+}

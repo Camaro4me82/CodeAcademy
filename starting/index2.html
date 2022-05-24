@@ -7,40 +7,72 @@
     <title>Textarea element</title>
   </head>
   <body>
-    <section id="overlay">
-      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
-      <hr>
+    
+    <section class="overlay" id="overlay">
+      <div class=" banner">
+        <img src="images-2/burger2.jpg" alt="Skylar's Burger Logo" id="logo">
+        <br>
+        <h2>Bobba Phats' Burgers</h2>
+      </div>
+        <hr>
+
+      <!--Form Section Start-->
       <form action="submission.html" method="POST">
-        <h1>Create a burger!</h1>
+        <h1>Create Your Burger!</h1>
+
+        <!--Protien Section-->
 					<section class="protein">
           <label for="patty">What type of protein would you like?</label>
-    			<input type="text" name="patty" id="patty">
+          <select name="patty" id="patty">
+            <option value="Chicken">Chicken</option>
+            <option value="Beef">Beef</option>
+            <option value="Pork">Pork</option>
+            <option value="Steak">Steak</option>
+          </select>
         </section>
         <hr>
+
+        <!--Patty Section-->
         <section class="patties">
           <label for="amount">How many patties would you like?</label>
-          <input type="number" name="amount" id="amount">
+          <input type="number" name="amount" id="amount" required>
         </section>
         <hr>
+
+        <!--Cooked Section-->
         <section class="cooked">
           <label for="doneness">How do you want your patty cooked</label>
           <br>
+          <input type="range" name="doneness" id="doneness" value="4" min="1" max="7">
+          <br>
           <span>Rare</span>
-          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Medium</span>
+          <!--<input type="range" name="doneness" id="doneness" value="3" min="1" max="5">-->
           <span>Well-Done</span>
+
         </section>
         <hr>
+
+        <!--Topping Section-->
         <section class="toppings">
           <span>What toppings would you like?</span>
           <br>
           <input type="checkbox" name="topping" id="lettuce" value="lettuce">
           <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="spinach" value="spinach">
+          <label for="spinach">Spinach</label>
           <input type="checkbox" name="topping" id="tomato" value="tomato">
           <label for="tomato">Tomato</label>
           <input type="checkbox" name="topping" id="onion" value="onion">
           <label for="onion">Onion</label>
+          <input type="checkbox" name="topping" id="pickle" value="pickle">
+          <label for="pickle">Pickle</label>
+          <input type="checkbox" name="topping" id="avocado" value="avocado">
+          <label for="">Avocado</label>
         </section>
         <hr>
+
+        <!--Cheese Section-->
         <section class="cheesy">
           <span>Would you like to add cheese?</span>
           <br>
@@ -48,36 +80,53 @@
           <label for="yes">Yes</label>
           <input type="radio" name="cheese" id="no" value="yes">
           <label for="no">No</label>
+          <br>
+          <label for="bun">What type of cheese would you like?</label>
+          <select name="bun" id="bun">
+            <option value="american">American</option>
+            <option value="cheddar">Cheddar</option>
+            <option value="swiss">Swiss</option>
+            <option value="provolone">Provolone</option>
+            <option value="havarti">Havarti</option>
+            <option value="colby jack">Colby Jack</option>
+          </select>
         </section>
         <hr>
+
+        <!--Bun Section-->
         <section class="bun-type">
           <label for="bun">What type of bun would you like?</label>
           <select name="bun" id="bun">
             <option value="sesame">Sesame</option>
-            <option value="potatoe">Potato</option>
+            <option value="potato">Potato</option>
             <option value="pretzel">Pretzel</option>
           </select>
         </section>
         <hr>
+
+        <!--Sauce Section-->
         <section class="sauce-selection">
           <label for="sauce">What type of sauce would you like?</label>
-          <input list="sauces" id="sauce" name="sauce">
+          <input list="sauces" id="sauce" name="sauce" required>
           <datalist id="sauces">
-            <option value="ketchup"></option>
-            <option value="mayo"></option>
-            <option value="mustard"></option>
+            <option value="Ketchup"></option>
+            <option value="Mayo"></option>
+            <option value="Mustard"></option>
+            <option value="Horseradish"></option>
+            <option value="None"></option>
           </datalist>
         </section>
         <hr>
+        <!--Extra Section-->
         <section class="extra-info">
           <label for="extra">Anything else you want to add?</label>
           <br>
-          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+          <textarea id="extra" name="extra" placeholder="Add text here" rows="3" cols="40"></textarea>
         </section>
         <hr>
 
+        <!--Add your code below-->
         <section class="submission">
-          <!--Add your code below-->
           <input type="submit" value="Submit">
         </section>
 
