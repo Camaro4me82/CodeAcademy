@@ -14,7 +14,7 @@ body {
 }
 
 .background {
-  background-image: url('images-2/deku1.jpg'); 
+  /*background-image: url('images-2/deku1.jpg');*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; 

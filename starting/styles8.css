@@ -9,7 +9,7 @@
 }
 
 div {
-    /* border: 2px solid red;  for mock-up */
+    border: 2px solid red;  /*for mock-up;*/
     padding: 10px 0;
     background-color:rgb(228, 191, 69);
 }
@@ -33,8 +33,9 @@ div {
     /* border: 2px solid orange; for mock-up */
     display: flex;
     justify-content: space-around;
-    margin: 0 10%;
+    margin: 0;
 }
+
 .nav p {
     display: inline-flex;
     justify-content: space-evenly;
@@ -44,11 +45,27 @@ div {
 .nav a {
     color: rgb(73, 73, 72);
     text-decoration: none;
+    text-align: center;
     font-size: 1.5em;
-    width: 125px;
+    width: 150px;
 }
 
+.nav a:hover {
+    display: inline;
+    margin: 10px 10px;
+    border: 1px solid rgb(14,17, 187);
+    border-radius: 5%;
+    background-color: rgb(121, 19, 19);
+    color:rgb(228, 191, 69);
+  }
+
 /*This is for Hero Banner*/
+
+.main {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .main img {
     /* border: 2px solid red; for mock-up */
@@ -68,14 +85,16 @@ div {
 .main p {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding-top: 10px;
     max-width: 900px;
-    text-align: center;
 }
 
 /*This is for Section A*/
 .sec-a {
     display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .sec-a h3 {
     font-size: 30px;
@@ -138,6 +157,8 @@ div {
     flex-wrap: wrap;
     justify-content: space-around;
     column-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .sec-b p {
     text-align: center;
@@ -150,12 +171,20 @@ div {
     flex-direction: column;
     justify-content: space-around;
 }
+
+.dad img {
+    width: 296px;
+    height: 250px;
+}
+
 /*This is for Footer */
 
 .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .footer p {
    text-align: center;
